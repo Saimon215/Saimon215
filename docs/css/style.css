@@ -1,0 +1,114 @@
+/* Google font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+/* =============================
+   THEME VARIABLES
+   ============================= */
+:root{
+  --brand:   #6c5ce7;   /* violet/indigo */
+  --brand-2: #4f46e5;   /* deeper indigo */
+  --accent:  #10b981;   /* emerald */
+  --ink:     #0f172a;   /* slate-900 */
+  --muted:   #6b7280;   /* slate-500 */
+
+  --card-bg: #ffffff;
+  --page-bg: #f8fafc;
+}
+
+/* =============================
+   BASE STYLES
+   ============================= */
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
+  background: radial-gradient(1200px 600px at 10% -10%, #eef2ff 0%, transparent 60%),
+              radial-gradient(1200px 600px at 100% 10%, #f0fdf4 0%, transparent 55%),
+              var(--page-bg);
+  color: var(--ink);
+  line-height: 1.6;
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* =============================
+   NAVBAR
+   ============================= */
+.bg-brand {
+  background: linear-gradient(90deg, var(--brand), var(--brand-2));
+}
+.navbar-brand { letter-spacing: .5px; }
+.navbar .nav-link { opacity: .9; }
+.navbar .nav-link:hover,
+.navbar .nav-link:focus { opacity: 1; }
+.navbar .nav-link.active { font-weight: 600; }
+
+/* =============================
+   HERO
+   ============================= */
+.hero {
+  border-radius: 1rem;
+  background: linear-gradient(180deg, #ffffffaa, #ffffffdd);
+  backdrop-filter: blur(6px);
+  border: 1px solid #e5e7eb;
+}
+
+/* =============================
+   CARDS
+   ============================= */
+.card {
+  border: 1px solid #e5e7eb;
+  border-radius: 1rem;
+}
+.card-header {
+  background: #fff;
+  border-bottom: 1px solid #e5e7eb;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+/* =============================
+   BUTTONS
+   ============================= */
+.btn-primary, .btn-outline-primary {
+  --bs-btn-border-radius: .75rem;
+}
+.btn-outline-primary {
+  border-color: var(--brand);
+  color: var(--brand);
+}
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background: var(--brand);
+  color: #fff;
+}
+.btn-brand {
+  background: var(--brand);
+  border-color: var(--brand);
+  color: #fff;
+}
+.btn-brand:hover {
+  background: var(--brand-2);
+  border-color: var(--brand-2);
+  color: #fff;
+}
+
+/* =============================
+   UTILITIES
+   ============================= */
+.text-muted { color: var(--muted)!important; }
+.rounded-2xl { border-radius: 1rem; }
+.shadow-soft { box-shadow: 0 10px 25px -12px rgba(2,6,23,.18); }
+
+/* =============================
+    ORIGINAL DEMO CLASS
+   ============================= */
+.myDivClass {
+  width: 50px;
+  height: 50px;
+  background-color: tomato;
+  border: 2px dotted green;
+  margin-left: 12em;
+  padding: 4px;
+}
